@@ -15,7 +15,7 @@ public class PDI {
     }
 
     public static void main(String[] args) {
-        String imagePath = "/home/marcus/IdeaProjects/image_process/src/images/img.png";
+        String imagePath = this.imagePath;
         PDI pdi = new PDI(imagePath);
         try {
             BufferedImage image = pdi.readImage();
@@ -307,9 +307,9 @@ public class PDI {
                 int green = rgb.get(1)[i][j];
                 int blue = rgb.get(2)[i][j];
 
-                totalPixels[position] =- red;
-                totalPixels[position + 1] =  - green;
-                totalPixels[position + 2] =  - blue;
+                totalPixels[position] = 255 - red;
+                totalPixels[position + 1] = 255 - green;
+                totalPixels[position + 2] =  255 - blue;
 
                 position += 3;
 
