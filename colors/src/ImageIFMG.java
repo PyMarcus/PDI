@@ -1,8 +1,3 @@
-/*
- * Prática de Processamento Digital de Imagens
- * prof.  ngelo Magno de Jesus
- */
-
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.image.BufferedImage;
